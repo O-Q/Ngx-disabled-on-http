@@ -1,24 +1,21 @@
 # NgxDisabledOnHttp
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+A library when click event sends HTTP request, disable tag until gets response.
 
-## Code scaffolding
+## Example:
 
-Run `ng generate component component-name --project ngx-disabled-on-http` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-disabled-on-http`.
-> Note: Don't forget to add `--project ngx-disabled-on-http` or else it will be added to the default project in your `angular.json` file. 
+### template:
 
-## Build
+```html
+<button [NgxDisabledOnHttp]="url" (click)="onButtonClicked()">click me!</button>
+```
 
-Run `ng build ngx-disabled-on-http` to build the project. The build artifacts will be stored in the `dist/` directory.
+### module:
 
-## Publishing
-
-After building your library with `ng build ngx-disabled-on-http`, go to the dist folder `cd dist/ngx-disabled-on-http` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-disabled-on-http` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```typescript
+imports: [
+  ...,
+  NgxDisabledOnHttpModule.register(BASE_URL)
+];
+```
+#### Note: "BASE_URL" is like: `https://example.com`
