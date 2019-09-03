@@ -1,0 +1,7 @@
+<div style="display: grid; justify-content: center">
+  <h1 style="text-align: center">
+    {{ name }}
+  </h1>
+  <button [NgxDisabledOnHttp]="url" (click)="onButtonClicked()">click me!</button>
+  <h4>status: {{status}}</h4>
+</div>
