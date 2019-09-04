@@ -1,6 +1,6 @@
 A library when click event sends HTTP request, disable tag until gets response.
 
-## Insatll
+## Install:
 
 `npm install ngx-disabled-on-http`
 
