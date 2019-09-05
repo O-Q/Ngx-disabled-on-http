@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
-import { ApiService } from './services/api.service';
-import { Subject } from 'rxjs';
 import { finalize } from 'rxjs/operators';
+import { ApiService } from './services/api.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private api: ApiService) {}
   name = 'Disabled On Http Library';
   url = this.api.factCatsUrl;
   status = '';
+  constructor(private api: ApiService) { }
 
   onButtonClicked() {
     this.status = 'Requesting server...';

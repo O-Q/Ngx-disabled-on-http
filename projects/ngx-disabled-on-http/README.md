@@ -1,13 +1,13 @@
 # NgxDisabledOnHttp
 
-A library when click event sends HTTP request, disable tag until gets response.
+A library when click event sends HTTP request, disables tag until client gets response.
 
-## Example:
+## Usage:
 
 ### template:
 
 ```html
-<button [NgxDisabledOnHttp]="url" (click)="onButtonClicked()">click me!</button>
+<button [NgxDisabledOnHttp]="url" (click)="onButtonClicked()">Get Facts</button>
 ```
 
 ### module:
@@ -15,7 +15,10 @@ A library when click event sends HTTP request, disable tag until gets response.
 ```typescript
 imports: [
   ...,
-  NgxDisabledOnHttpModule.register(BASE_URL)
+  NgxDisabledOnHttpModule
 ];
 ```
-#### Note: "BASE_URL" is like: `https://example.com`
+
+## Example:
+
+[Clone repository](https://github.com/O-Q/Ngx-disabled-on-http.git) and serve

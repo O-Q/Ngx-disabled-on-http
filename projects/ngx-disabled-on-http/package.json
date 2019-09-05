@@ -1,6 +1,17 @@
 {
   "name": "ngx-disabled-on-http",
-  "version": "0.0.1",
+  "description": "A library when click event sends HTTP request, disables tag until client gets response.",
+  "author": {
+    "name": "MiakovA",
+    "email": "mahdi.shiri@outlook.com"
+  },
+  "version": "0.0.2-1",
+  "homepage": "https://github.com/O-Q/Ngx-disabled-on-http",
+  "bugs": {
+    "url": "https://github.com/O-Q/Ngx-disabled-on-http/issues"
+  },
+  "keywords": ["angular", "directive", "typescript", "http"],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.1.3",
     "@angular/core": "^8.1.3"

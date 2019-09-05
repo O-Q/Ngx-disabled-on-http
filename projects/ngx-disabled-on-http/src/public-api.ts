@@ -2,5 +2,7 @@
  * Public API Surface of ngx-disabled-on-http
  */
 
-export * from './lib/ngx-disabled-on-http.directive';
-export * from './lib/ngx-disabled-on-http.module';
+import { NgxDisabledOnHttpDirective } from './lib/ngx-disabled-on-http.directive';
+import { NgxDisabledOnHttpModule } from './lib/ngx-disabled-on-http.module';
+
+export { NgxDisabledOnHttpDirective, NgxDisabledOnHttpModule };

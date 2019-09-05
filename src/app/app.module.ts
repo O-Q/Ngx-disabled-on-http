@@ -1,20 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { BASE_URL } from './services/api.service';
+import { AppComponent } from './app.component';
 import { NgxDisabledOnHttpModule } from 'projects/ngx-disabled-on-http/src/public-api';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    NgxDisabledOnHttpModule.register(BASE_URL)
-  ],
+  imports: [BrowserModule, HttpClientModule, NgxDisabledOnHttpModule],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

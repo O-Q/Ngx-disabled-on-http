@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class NgxDisabledOnHttpService {
-  static BASE_URL = '';
-  disabledButtons = new Map<string, BehaviorSubject<boolean>>();
+  disabledButtons = new Map<string, Subject<boolean>>();
 
   getIdFromUrl(url: string) {
-    return url.replace(NgxDisabledOnHttpService.BASE_URL, '').split('?')[0];
+    return url.split('?')[0];
   }
 }
