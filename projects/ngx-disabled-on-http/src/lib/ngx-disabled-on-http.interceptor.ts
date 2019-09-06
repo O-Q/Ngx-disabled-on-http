@@ -16,11 +16,10 @@ export class NgxDisabledOnHttpInterceptor implements HttpInterceptor {
     request: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-    const id = this.service.getIdFromUrl(request.url);
     return next.handle(request).pipe(
       finalize(() => {
         setTimeout(() => {
-          const disabledButton = this.service.disabledButtons[id];
+          const disabledButton = this.service.getButton(request.url);
           if (disabledButton) {
             disabledButton.next(true);
           }
