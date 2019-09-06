@@ -21,4 +21,4 @@ imports: [
 
 ## Example:
 
-[Clone repository](https://github.com/O-Q/Ngx-disabled-on-http.git) and serve
+See [this](https://o-q.github.io/Ngx-disabled-on-http/) or [Clone repository](https://github.com/O-Q/Ngx-disabled-on-http.git) and serve

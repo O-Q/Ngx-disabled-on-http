@@ -8,7 +8,7 @@ const headers = new HttpHeaders({
 @Injectable({ providedIn: 'root' })
 export class ApiService {
   factCatsUrl = `${BASE_URL}/facts`;
-  constructor(private readonly http: HttpClient) {}
+  constructor(private readonly http: HttpClient) { }
   testGetSome() {
     return this.http.get(this.factCatsUrl, { headers });
   }
